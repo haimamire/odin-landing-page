@@ -1,128 +1,147 @@
- body {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    font-family: Roboto, sans-serif;
-    margin: 0;
-    min-height: 100dvh;
- }
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: Roboto, sans-serif;
+  margin: 0;
+  min-height: 100dvh;
+}
 
- .header,
- .footer,
- .top-container {
-    background-color: #1F2937;
-    color: white;
- }
+.header,
+.footer,
+.top-container {
+  background-color: #1F2937;
+}
 
- .header {
-    padding: 10px 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 18px;
- }
+.header,
+.top-container,
+.signup-container {
+  padding-left: 200px;
+  padding-right: 200px;
+}
 
- .content {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
- }
+.header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
 
- .top-container {
-    padding: 100px;
-    display: flex;
-    justify-content: space-between;
-    gap: 18px;
- }
+.header .logo {
+  font-size: 24px;
+  font-weight: 1000;
+  color: #F9FAF8;
+  flex-shrink: 0;
+}
 
- .gallery-container {
-   padding: 50px 130px;
-   text-align: center;
- }
+.header ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 0;
+  flex-shrink: 0;
+}
 
- .gallery {
-   margin: 10px;
-   display: flex;
-   justify-content: center;
-   gap: 10px;
- }
+.header a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #E5E7EB;
+}
 
- .gallery-item {
-   display: flex;
-   flex-direction: column;
- }
+.content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
 
- .gallery-item img {
-   border: 2px;
-   border-color: #3882F6;
- }
+.top-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+}
 
- .quote-container {
-   display: flex;
-   justify-content: center;
-   background-color: #E5E7EB;
-   padding: 50px 150px;
- }
+.top-container h1 {
+  font-size: 48px;
+}
 
- .quote {
-   display: flex;
-   flex-direction: column;
-   max-width: 700px;
- }
+.gallery-container {
+  padding: 50px 130px;
+  text-align: center;
+}
 
- .quote-text {
-   
- }
+.gallery {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
 
- .quote-author {
-   align-self: flex-end;
+.gallery-item {
+  display: flex;
+  flex-direction: column;
+  max-width: 75px;
+  font-size: 12px;
+}
 
- }
+.gallery-item img {
+  border: 3px solid #3882F6;
+  border-radius: 5px;
+}
 
- .signup-container {
-   background-color: #3882F6;
-   border-radius: 5px;
-   color: white;
-   margin: 100px;
-   padding: 10px 50px;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   gap: 50px;
- }
+.quote-container {
+  display: flex;
+  justify-content: center;
+  background-color: #E5E7EB;
+  padding: 50px 150px;
+}
 
- .signup {
-   margin: 0;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   gap: 5px;
- }
+.quote {
+  display: flex;
+  flex-direction: column;
+  max-width: 700px;
+}
 
- .signup-container button {
-   background-color: #3882F6;
-   color: white;
-   border-color: white;
-   border-style: solid;
-   border-radius: 5px;
-   padding: 5px 15px;
-   flex-shrink: 0;
- }
+.quote-author {
+  align-self: flex-end;
 
- .footer {
-    text-align: center;
- }
+}
 
- ul {
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-    gap: 18px;
-    padding: 0;
-    flex-shrink: 0;
- }
+.signup-container {
+  background-color: #3882F6;
+  border-radius: 5px;
+  color: white;
+  margin: 100px;
+  padding: 10px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
 
- a {
-    text-decoration: none;
-    color: white;
- }
+.signup {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+}
+
+.signup-container button {
+  background-color: #3882F6;
+  color: white;
+  border-color: white;
+  border-style: solid;
+  border-radius: 5px;
+  padding: 5px 15px;
+  flex-shrink: 0;
+}
+
+.footer {
+  text-align: center;
+  padding: 30px;
+  color: #E5E7EB;
+}
