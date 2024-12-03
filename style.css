@@ -14,7 +14,7 @@ a {
 button {
   background-color: #3882F6;
   border-style: none;
-  border-radius: 5px;
+  border-radius: 10px;
   padding: 10px 30px;
   flex-shrink: 0;
 }
@@ -177,18 +177,36 @@ button {
 }
 
 .signup-container {
+  display: flex;
+  justify-content: center;
+}
+
+.signup-box {
   background-color: #3882F6;
+  color: white;
   border-radius: 5px;
-  padding: 10px 50px;
+  padding: 50px 100px;
   margin: 100px 200px;
-  min-width: 300px;
+  min-width: 500px;
+  max-width: 800px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 50px;
 }
 
-.signup-container button {
+.signup-box strong {
+  font-size: 24px;
+  font-weight: 1000;
+}
+
+.signup-box p {
+  font-size: 20px;
+  color: #E5E7EB;
+  margin: 10px auto;
+}
+
+.signup-box button {
   border-color: white;
   border-style: solid;
 }
