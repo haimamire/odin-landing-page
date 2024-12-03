@@ -1,1 +1,1 @@
-This is the second project of The Odin Project Foundations course. In this one, I will have to do a homepage from scratch, using the basic HTML and CSS knowledge I learned so far.
+This is the second project of The Odin Project Foundations Course. In this one, I will have to do a homepage from scratch, using the basic HTML and CSS knowledge I've learned so far.
