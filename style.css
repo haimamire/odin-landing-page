@@ -167,14 +167,15 @@ button {
   display: flex;
   justify-content: center;
   background-color: #E5E7EB;
-  padding: 100px 200px;
+  padding: 100px 60px;
 }
 
 .quote {
   display: flex;
+  flex: 1;
   flex-direction: column;
   gap: 20px;
-  min-width: 500px;
+  /* min-width: 500px; */
   max-width: 600px;
 }
 
