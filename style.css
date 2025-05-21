@@ -1,11 +1,15 @@
 html,body {
-  min-height: 100dvh;
-  min-width: 100dvw;
+  min-height: 100lvh;
+  min-width: 100lvw;
+  /*Viewport unit represents 1% of the browser containing block.
+  * As mobile browsers UI change size as you scroll, large viewport units and small viewport units were created.
+  * lvh uses the size when the browser ui is the smallest, and svh when its the biggest (at the beginning for example).
+  */
   overflow-x: hidden;
   margin: 0px;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  flex-direction: column; /* top to bottom */
+  justify-content: space-between; /* even distribution between start and end */
   font-family: Roboto, sans-serif;
 }
 
@@ -18,7 +22,7 @@ button {
   border-style: none;
   border-radius: 10px;
   padding: 10px 30px;
-  flex-shrink: 0;
+  flex-shrink: 0; /* no shrinking */
 }
 
 .signup-button {
@@ -87,7 +91,7 @@ button {
   padding-bottom: 60px;
   display: flex;
   justify-content: space-between;
-  align-items: stretch;
+  align-items: stretch; /* fill the whole container */
   gap: 30px;
   flex-wrap: wrap ;
 }
@@ -114,7 +118,7 @@ button {
 }
 
 .top-container .right {
-  flex: 1;
+  flex: 1; /* shortcut for grow 1 shrink 1 base 0 */
   display: flex;
 }
 
